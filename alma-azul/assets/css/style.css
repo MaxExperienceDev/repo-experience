@@ -272,7 +272,7 @@ h1 {
 #qr-output {
   display: inline-block;
   padding: 1rem;
-  border: 3px solid var(--color-primary-alma-azul); /* azul marino */
+  border: 3px solid #004F6B;
   border-radius: 12px;
   margin-top: 10px;
 }

@@ -5,8 +5,8 @@
   "description": "Centro integral Alma Azul. Accede rápidamente a tus servicios, contacto y actualizaciones desde tu dispositivo.",
   "lang": "es-ES",
 
-  "start_url": "/repo-experience/alma-azul/",
-  "scope": "/repo-experience/alma-azul/",
+  "start_url": "./index.html",
+  "scope": "./",
 
   "display": "standalone",
   "orientation": "any",
@@ -17,7 +17,8 @@
     {
       "src": "assets/img/icons/icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "assets/img/icons/icon-192-maskable.png",
@@ -28,7 +29,8 @@
     {
       "src": "assets/img/icons/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "assets/img/icons/icon-512-maskable.png",

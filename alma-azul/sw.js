@@ -8,7 +8,7 @@
    BUILD-INJECTED CONSTANTS
 ========================= */
 
-var VERSION = '2026.03.28.22.41.55';
+var VERSION = '2026.03.29.15.25.52';
 const CACHE_NAME = `cache-v${VERSION}`;
 var CORE_ASSETS = [
   "./assets/css/style.css",

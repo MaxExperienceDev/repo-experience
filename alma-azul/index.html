@@ -9,7 +9,6 @@
 
   <!-- PWA / Mobile -->
   <meta name="theme-color" content="#004F6B">
-  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="AlmaAzul">
@@ -18,10 +17,14 @@
   <link rel="manifest" href="./manifest.json">
 
   <!-- ICONOS -->
-  <link rel="icon" href="./assets/img/icons/favicon.png" sizes="32x32">
-  <link rel="icon" href="./assets/img/icons/icon-launcher.png" sizes="192x192">
-  <link rel="apple-touch-icon" href="./assets/img/icons/icon-launcher.png">
+  <!-- Favicon (solo móvil, transparente) -->
+  <link rel="icon" type="image/png" sizes="48x48" href="./assets/img/icons/favicon-48.png">
 
+  <!-- Fallback (no interfiere con manifest, útil en algunos flujos Android) -->
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/icons/icon-android.png">
+
+  <!-- iOS Home Screen -->
+  <link rel="apple-touch-icon" href="./assets/img/icons/apple-touch-icon-180.png">
 
   <!-- iOS Splash -->
   <link rel="apple-touch-startup-image" href="./assets/img/icons/apple-splash-1290x2796.png" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3)">

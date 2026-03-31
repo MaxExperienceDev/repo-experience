@@ -1,6 +1,6 @@
 'use strict';
 
-var VERSION = '2026.03.31.00.15.43';
+var VERSION = '2026.03.31.00.29.43';
 const CACHE_NAME = `cache-v${VERSION}`;
 var CORE_ASSETS = [
   "./assets/css/style.css",

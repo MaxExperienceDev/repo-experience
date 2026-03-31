@@ -1,15 +1,18 @@
 'use strict';
 
-var VERSION = '2026.03.30.19.49.56';
+var VERSION = '2026.03.30.20.20.57';
 const CACHE_NAME = `cache-v${VERSION}`;
 var CORE_ASSETS = [
   "./assets/css/style.css",
+  "./assets/img/icons/apple-splash-1170x2532.png",
   "./assets/img/icons/apple-splash-1179x2556.png",
   "./assets/img/icons/apple-splash-1290x2796.png",
   "./assets/img/icons/apple-splash-750x1334.png",
   "./assets/img/icons/apple-touch-icon-180.png",
   "./assets/img/icons/favicon.ico",
+  "./assets/img/icons/icon-192-maskable.png",
   "./assets/img/icons/icon-192.png",
+  "./assets/img/icons/icon-512-maskable.png",
   "./assets/img/icons/icon-512.png",
   "./assets/img/icons/icon-android.png",
   "./assets/img/icons/og.png",

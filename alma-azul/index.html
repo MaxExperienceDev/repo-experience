@@ -7,60 +7,60 @@
   <title>Alma Azul Center</title>
   <meta name="description" content="Centro integral Alma Azul. Accede rápidamente a tus servicios, contacto y actualizaciones.">
 
-  <!-- PWA / Mobile - Meta tags básicos -->
+  <!-- Meta tags PWA -->
   <meta name="theme-color" content="#004F6B">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="AlmaAzul">
+  <meta name="mobile-web-app-capable" content="yes">
 
-  <!-- ICONOS - Orden crítico para prioridad en Chrome Android e iOS -->
+  <!-- ICONOS - Rutas absolutas para subcarpeta -->
+  <link rel="icon" type="image/x-icon" href="/repo-experience/alma-azul/assets/img/icons/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="/repo-experience/alma-azul/assets/img/icons/favicon.ico">
 
-  <!-- 1. Favicon prioritario para pestaña del navegador (Chrome Android) -->
-  <link rel="icon" type="image/x-icon" href="./assets/img/icons/favicon.ico">
-  <link rel="shortcut icon" type="image/x-icon" href="./assets/img/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="/repo-experience/alma-azul/assets/img/icons/icon-android.png">
 
-  <!-- 2. Fallback controlado para Android (después del pequeño) -->
-  <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/icons/icon-android.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/repo-experience/alma-azul/assets/img/icons/apple-touch-icon-180.png">
 
-  <!-- 3. iOS Home Screen Icon (launcher) -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/icons/apple-touch-icon-180.png">
+  <!-- Splash Screens iOS -->
+  <link rel="apple-touch-startup-image" href="/repo-experience/alma-azul/assets/img/icons/apple-splash-1290x2796.png" 
+        media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3)">
+  <link rel="apple-touch-startup-image" href="/repo-experience/alma-azul/assets/img/icons/apple-splash-1179x2556.png" 
+        media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3)">
+  <link rel="apple-touch-startup-image" href="/repo-experience/alma-azul/assets/img/icons/apple-splash-1170x2532.png" 
+        media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)">
+  <link rel="apple-touch-startup-image" href="/repo-experience/alma-azul/assets/img/icons/apple-splash-750x1334.png" 
+        media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)">
 
-  <!-- 4. iOS Splash Screens (launch images) -->
-  <link rel="apple-touch-startup-image" href="./assets/img/icons/apple-splash-1290x2796.png" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3)">
-  <link rel="apple-touch-startup-image" href="./assets/img/icons/apple-splash-1179x2556.png" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3)">
-  <link rel="apple-touch-startup-image" href="./assets/img/icons/apple-splash-1170x2532.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)">
-  <link rel="apple-touch-startup-image" href="./assets/img/icons/apple-splash-750x1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)">
+  <!-- Manifest -->
+  <link rel="manifest" href="/repo-experience/alma-azul/manifest.json">
 
-  <!-- Manifest para PWA (después de los íconos) -->
-  <link rel="manifest" href="./manifest.json">
-
-  <!-- Open Graph -->
+  <!-- Open Graph y Twitter -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Alma Azul Center">
   <meta property="og:description" content="Centro integral Alma Azul.">
   <meta property="og:image" content="https://maxexperiencedev.github.io/repo-experience/alma-azul/assets/img/icons/og.png">
   <meta property="og:url" content="https://maxexperiencedev.github.io/repo-experience/alma-azul/">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Alma Azul Center">
   <meta name="twitter:description" content="Centro integral Alma Azul.">
   <meta name="twitter:image" content="https://maxexperiencedev.github.io/repo-experience/alma-azul/assets/img/icons/og.png">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="/repo-experience/alma-azul/assets/css/style.css">
 </head>
 
 <body>
   <main class="main-content-wrapper">
 
-     <!-- =========================================================
+    <!-- =========================================================
          SECCIÓN PRINCIPAL — PWA INSTALL
     ========================================================= -->
     <section class="card-section" id="welcome-card">
 
       <img
-        src="./assets/img/images/logo.jpg"
+        src="/repo-experience/alma-azul/assets/img/images/logo.jpg"
         alt="Logo Alma Azul Center"
         class="logo"
       />
@@ -71,129 +71,112 @@
 
     </section>
 
-<!-- =========================================================
-     MODAL iOS EDUCATIVO — AÑADIR A INICIO
-========================================================= -->
-  <div class="ios-modal" id="ios-modal">
-  <div class="ios-modal-card">
+    <!-- =========================================================
+         MODAL iOS EDUCATIVO — AÑADIR A INICIO
+    ========================================================= -->
+    <div class="ios-modal" id="ios-modal">
+      <div class="ios-modal-card">
 
-    <p class="ios-title">
-      <strong>Añade esta app a tu inicio</strong>
-    </p>
+        <p class="ios-title">
+          <strong>Añade esta app a tu inicio</strong>
+        </p>
 
-    <p class="ios-modal-text">
-      Estás usando Safari.
-      Para acceder más rápido, puedes añadir esta app
-      a tu pantalla de inicio.
-    </p>
+        <p class="ios-modal-text">
+          Estás usando Safari.
+          Para acceder más rápido, puedes añadir esta app
+          a tu pantalla de inicio.
+        </p>
 
-    <p class="ios-modal-text">
-      Pulsa el botón de compartir
-      <span class="ios-icon">⬆️</span>
-      <br />
-      <small>(en la barra inferior)</small>
-    </p>
+        <p class="ios-modal-text">
+          Pulsa el botón de compartir
+          <span class="ios-icon">⬆️</span>
+          <br />
+          <small>(en la barra inferior)</small>
+        </p>
 
-    <div class="ios-down-indicator">⬇️</div>
+        <div class="ios-down-indicator">⬇️</div>
 
-    <p class="ios-modal-text">
-      Luego selecciona
-      <br />
-      <strong>Añadir a pantalla de inicio</strong>
-    </p>
+        <p class="ios-modal-text">
+          Luego selecciona
+          <br />
+          <strong>Añadir a pantalla de inicio</strong>
+        </p>
 
-    <p class="ios-modal-text">
-      Se abrirá como una app, sin usar el navegador.
-    </p>
+        <p class="ios-modal-text">
+          Se abrirá como una app, sin usar el navegador.
+        </p>
 
-    <button id="ios-close">Entendido</button>
+        <button id="ios-close">Entendido</button>
 
-  </div>
-</div>
-    
-  <!-- 💆‍♀️ Servicios — Acordeón -->
-  <section class="card-section" id="servicios-card">
-    <button 
-      id="toggle-servicios-btn"
-      class="toggle-btn"
-      aria-expanded="false"
-      aria-controls="servicios-wrapper">
-      Ver Servicios
-    </button>
-      <div class="servicios-wrapper" id="servicios-wrapper">
-      <div class="servicio-item">💎 <strong>Tratamiento de Acné</strong><br/>Protocolos clínicos que renuevan la piel y reducen imperfecciones visibles de forma segura.</div>
-      <div class="servicio-item">🌸 <strong>Tratamiento de Manchas</strong><br/>Terapias precisas que unifican el tono de la piel y restauran su luminosidad natural.</div>
-      <div class="servicio-item">✨ <strong>Reducción de Arrugas</strong><br/>Tratamientos avanzados que suavizan líneas de expresión y rejuvenecen la piel visiblemente.</div>
-      <div class="servicio-item">🌿 <strong>Flacidez Cutánea</strong><br/>Protocolos que fortalecen la piel y devuelven firmeza y elasticidad de manera armoniosa.</div>
-      <div class="servicio-item">💆‍♂️ <strong>Baja de Medidas</strong><br/>Técnicas corporales que moldean la figura y promueven bienestar físico integral y equilibrado.</div>
-      <div class="servicio-item">💧 <strong>Drenaje Linfático</strong><br/>Terapias pre y post operatorias que eliminan toxinas y aceleran la recuperación segura del cuerpo.</div>
-      <div class="servicio-item">🍃 <strong>Biomagnetismo</strong><br/>Equilibrio energético que potencia la armonía interna y mejora resultados estéticos visibles.</div>
-       <div class="servicio-item">🌺 <strong>Flores de Bach</strong><br/>Soluciones naturales que armonizan emociones, reducen estrés y fortalecen belleza interna y externa.</div>
-       <div class="servicio-item">🔥 <strong>Masaje Reductor</strong><br/>Técnicas manuales intensivas que activan circulación, disminuyen volumen localizado y mejoran contorno corporal.</div>
-       <div class="servicio-item">🧘 <strong>Holística</strong><br/>Prácticas integrales que armonizan cuerpo y mente, elevando bienestar profundo y realzando belleza natural duradera.</div>
+      </div>
     </div>
-  </section>
+    
+    <!-- Servicios — Acordeón -->
+    <section class="card-section" id="servicios-card">
+      <button 
+        id="toggle-servicios-btn"
+        class="toggle-btn"
+        aria-expanded="false"
+        aria-controls="servicios-wrapper">
+        Ver Servicios
+      </button>
+      <div class="servicios-wrapper" id="servicios-wrapper">
+        <div class="servicio-item">💎 <strong>Tratamiento de Acné</strong><br/>Protocolos clínicos que renuevan la piel y reducen imperfecciones visibles de forma segura.</div>
+        <div class="servicio-item">🌸 <strong>Tratamiento de Manchas</strong><br/>Terapias precisas que unifican el tono de la piel y restauran su luminosidad natural.</div>
+        <div class="servicio-item">✨ <strong>Reducción de Arrugas</strong><br/>Tratamientos avanzados que suavizan líneas de expresión y rejuvenecen la piel visiblemente.</div>
+        <div class="servicio-item">🌿 <strong>Flacidez Cutánea</strong><br/>Protocolos que fortalecen la piel y devuelven firmeza y elasticidad de manera armoniosa.</div>
+        <div class="servicio-item">💆‍♂️ <strong>Baja de Medidas</strong><br/>Técnicas corporales que moldean la figura y promueven bienestar físico integral y equilibrado.</div>
+        <div class="servicio-item">💧 <strong>Drenaje Linfático</strong><br/>Terapias pre y post operatorias que eliminan toxinas y aceleran la recuperación segura del cuerpo.</div>
+        <div class="servicio-item">🍃 <strong>Biomagnetismo</strong><br/>Equilibrio energético que potencia la armonía interna y mejora resultados estéticos visibles.</div>
+        <div class="servicio-item">🌺 <strong>Flores de Bach</strong><br/>Soluciones naturales que armonizan emociones, reducen estrés y fortalecen belleza interna y externa.</div>
+        <div class="servicio-item">🔥 <strong>Masaje Reductor</strong><br/>Técnicas manuales intensivas que activan circulación, disminuyen volumen localizado y mejoran contorno corporal.</div>
+        <div class="servicio-item">🧘 <strong>Holística</strong><br/>Prácticas integrales que armonizan cuerpo y mente, elevando bienestar profundo y realzando belleza natural duradera.</div>
+      </div>
+    </section>
 
-<!-- 💆‍♀️ contactos -->
-<!-- 📞 Contacto -->
+    <!-- Contacto -->
     <section class="card-section" id="contacto-card">
       <h2>Contáctanos</h2>
       <button class="contact-button llamada_tel" id="llamada-tel-button">Llamada Telefónica</button>
       <button class="contact-button contacto_chat" id="contacto-chat-button">Chat Directo</button>
     </section> 
-    <!-- 💆‍♀️ Redes-->
+
+    <!-- Redes sociales -->
     <section class="card-section" id="social-card">
       <h2>Síguenos</h2>
       <div class="social-links">
         <button class="social-icon" id="facebook-btn">
-          <img src="./assets/img/social/facebook.svg" alt="Facebook" />
+          <img src="/repo-experience/alma-azul/assets/img/social/facebook.svg" alt="Facebook" />
         </button>
         <button class="social-icon" id="x-btn">
-          <img src="./assets/img/social/x.svg" alt="X" />
+          <img src="/repo-experience/alma-azul/assets/img/social/x.svg" alt="X" />
         </button>
         <button class="social-icon" id="instagram-btn">
-          <img src="./assets/img/social/instagram.svg" alt="Instagram" />
+          <img src="/repo-experience/alma-azul/assets/img/social/instagram.svg" alt="Instagram" />
         </button>
       </div>
     </section>
-  <section class="card-section" id="qr-card">
-  <button class="qr_code contact-button" id="qr-code">Ver Código QR</button>
-  <div id="qr-container">
-    <div id="qr-output"></div>
-  </div>
-</section>
+
+    <!-- QR Code -->
+    <section class="card-section" id="qr-card">
+      <button class="qr_code contact-button" id="qr-code">Ver Código QR</button>
+      <div id="qr-container">
+        <div id="qr-output"></div>
+      </div>
+    </section>
 
   </main>
 
   <footer class="app-footer">
-    <p>© 2025 Alma Azul Centerooll</p>
+    <p>© 2025 Alma Azul Center</p>
   </footer>
 
-  <script src="./js/qrcode.min.js"></script>
-  <script src="./js/qrcode.js"></script>
-    <script src="./js/botones.js"></script>
-  <script src="./js/toggle-servicios.js"></script>
-  <script src="./js/pwa-install-handler.js"></script>
- <script src="./js/app.js"></script>
+  <!-- Scripts - Rutas absolutas para subcarpeta -->
+  <script src="/repo-experience/alma-azul/js/qrcode.min.js"></script>
+  <script src="/repo-experience/alma-azul/js/qrcode.js"></script>
+  <script src="/repo-experience/alma-azul/js/botones.js"></script>
+  <script src="/repo-experience/alma-azul/js/toggle-servicios.js"></script>
+  <script src="/repo-experience/alma-azul/js/pwa-install-handler.js"></script>
+  <script src="/repo-experience/alma-azul/js/app.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

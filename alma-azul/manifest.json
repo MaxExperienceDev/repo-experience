@@ -1,12 +1,12 @@
 {
-  "id": "Alma-Azul-Pwa",
+  "id": "/repo-experience/alma-azul/",
   "name": "Alma Azul Center",
   "short_name": "AlmaAzul",
   "description": "Centro integral Alma Azul. Accede rápidamente a tus servicios, contacto y actualizaciones desde tu dispositivo.",
   "lang": "es-ES",
 
-  "start_url": "./",
-  "scope": "./",
+  "start_url": "/repo-experience/alma-azul/",
+  "scope": "/repo-experience/alma-azul/",
 
   "display": "standalone",
   "orientation": "any",
